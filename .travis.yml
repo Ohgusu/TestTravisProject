@@ -2,3 +2,5 @@ language: objective-c
 xcode_workspace: TravisTestProject.xcworkspace
 xcode_scheme: TravisTestProjectTests
 xcode_sdk: iphonesimulator
+script:
+	- xctool -workspace TravisTestProject.xcworkspace -scheme TravisTestProjectTests -sdk iphonesimulator build test
