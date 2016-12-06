@@ -1,3 +1,4 @@
 language: objective-c
-script:
-	- travis_wait 60 xctool -workspace TravisTestProject.xcworkspace -scheme TravisTestProjectTests -sdk iphonesimulator build test
+xcode_workspace: TravisTestProject.xcworkspace
+xcode_scheme: TravisTestProject
+xcode_sdk: iphonesimulator
