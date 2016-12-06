@@ -3,4 +3,4 @@ xcode_workspace: TravisTestProject.xcworkspace
 xcode_scheme: TravisTestProjectTests
 xcode_sdk: iphonesimulator
 script:
-	- xctool -workspace TravisTestProject.xcworkspace -scheme TravisTestProjectTests -sdk iphonesimulator build test
+	- travis_wait 60 xctool -workspace TravisTestProject.xcworkspace -scheme TravisTestProjectTests -sdk iphonesimulator build test
